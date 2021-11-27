@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fectching User Data From Github Using API</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="container my-5 d-flex justify-content-center">
+        <table style="width:65%;">
+            <tr>
+                <td style="width:100%;" class="mr-1">
+                    <input type="text" class="form-control" id="input" placeholder="Enter Github Username" style="width:100%;">
+                </td>
+                <td>
+                    <button class="btn btn-primary mx-1" onclick="getData()">Enter</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="container d-flex justify-content-center">
+        <div class="col-md-8">
+            <!-- Column -->
+            <div class="card"> <img class="card-img-top" src="./Images/github-universe.jpg" alt="Card image cap">
+                <div class="card-body little-profile text-center">
+                    <div class="pro-img">
+                        <img id="img" src="./Images/avatar2.png" alt="user">
+                    </div>
+                    <h3 id="name" class="m-b-0">DEMO</h3>
+                    <p id="bio" class="font font-weight-bold">Web Designer &amp; Developer</p>
+                    <div class="row text-center m-t-20">
+                        <div class="col-lg-4 col-md-4 m-t-20">
+                            <h3 id="repos" class="m-b-0">150</h3><strong>Repositries</strong>
+                        </div>
+                        <div class="col-lg-4 col-md-4 m-t-20">
+                            <h3 id="followers" class="m-b-0">434</h3><strong>Followers</strong>
+                        </div>
+                        <div class="col-lg-4 col-md-4 m-t-20">
+                            <h3 id="followings" class="m-b-0">545</h3><strong>Following</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./Javascript/app.js"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
